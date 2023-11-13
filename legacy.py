@@ -1,3 +1,11 @@
+
+
+
+
+
+# DON'T RUN IT
+
+
 from pygame import *
 from random import randint
 
@@ -171,3 +179,7 @@ while game:
                 lives = 3
     display.update()
     clock.tick(FPS)
+
+
+
+# DON'T RUN IT
