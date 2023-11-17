@@ -20,7 +20,7 @@ def load(key: bytes | str) -> dict:
         data = eval(cipher_suite.decrypt(cipher_text).decode(encoding="utf-8"))
     except FileNotFoundError:
         os.mkdir(api_folder_path) if not os.path.exists(api_folder_path) else ...
-        data = {}
+        data = {"money": "0", "data": "0"}
     return data
 
 def save(key: bytes | str, data: dict) -> None:
